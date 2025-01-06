@@ -95,7 +95,8 @@
   margin-top: 10px;
 }
 
-@media (max-width: 900px) {
+/* Responsividade */
+@media (max-width: 1100px) {
   .aboutContent {
     flex-direction: column;
     gap: 20px;
@@ -107,10 +108,12 @@
 
   .textContainer {
     order: 2;
-    align-items: center;
-    text-align: center;
+    text-align: left; /* Alinha o texto à esquerda */
+    align-items: flex-start; /* Alinha os itens à esquerda */
   }
+}
 
+@media (max-width: 900px) {
   .topPart h2 {
     font-size: 1.8rem;
   }
@@ -120,7 +123,7 @@
   }
 
   .button {
-    align-self: center;
+    align-self: flex-start;
   }
 }
 
