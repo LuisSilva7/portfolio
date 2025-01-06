@@ -106,6 +106,14 @@ const Contact = () => {
               </p>
             )}
           </form>
+          <div className={styles.directEmail}>
+            <a
+              href="mailto:your-email@example.com"
+              className={styles.emailLink}
+            >
+              Send me an email directly
+            </a>
+          </div>
         </div>
       </div>
     </section>

@@ -11,7 +11,7 @@
 body {
   font-family: "Ibarra Real Nova", serif;
   color: rgb(33, 33, 33);
-  background-color: #f8f8ff;
+  background: linear-gradient(135deg, #1c1c28, #2a2a3b, #1f1f32);
 }
 
 p {
