@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #141414;
+}
+
+body {
+  font-family: "Ibarra Real Nova", serif;
+  color: rgb(33, 33, 33);
+  background-color: #f8f8ff;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+select {
+  cursor: pointer;
+}
+
+input,
+select,
+button {
+  font-family: "Ibarra Real Nova", serif;
+}

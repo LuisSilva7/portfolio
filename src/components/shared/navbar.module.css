@@ -1,0 +1,148 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: 10px auto;
+  padding: 10px 0;
+  background: none;
+  position: relative;
+  transition: width 0.3s ease;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  transition: height 0.3s ease;
+}
+
+.menu ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #959898;
+}
+
+.activeLink {
+  color: #0099cc;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+  margin-right: 20px;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+  margin: 4px 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburgerOpen span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburgerOpen span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburgerOpen span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 450px) {
+  .navbar {
+    width: 90%;
+  }
+
+  .logoImage {
+    height: 40px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menuOpen {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: #f8f8f8;
+    justify-content: center;
+    align-items: center;
+    animation: slideDown 0.5s ease;
+    z-index: 1000;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 5px 5px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navLink {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .navLink:hover {
+    color: #0099cc;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

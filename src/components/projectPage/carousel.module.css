@@ -1,0 +1,12 @@
+.carouselContainer {
+  height: 740px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
