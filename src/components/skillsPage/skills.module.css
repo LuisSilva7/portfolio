@@ -65,7 +65,7 @@
 }
 
 .skillCard:hover {
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3); /* Simula a borda sem aumentar o tamanho */
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
 }
 
 .skillImage {
