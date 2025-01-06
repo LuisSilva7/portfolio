@@ -1,14 +1,20 @@
 .navbar {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1c1c28, #2a2a3b);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  position: relative;
+}
+
+.navbarContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 60%;
-  margin: 10px auto;
-  padding: 10px 0;
-  background: none;
-  position: relative;
-  transition: width 0.3s ease;
-  z-index: 1000;
+  margin: 0 auto;
+  padding: 15px 0;
 }
 
 .logo {
@@ -17,7 +23,7 @@
 }
 
 .logoImage {
-  height: 60px;
+  height: 50px;
   width: auto;
   object-fit: contain;
   transition: height 0.3s ease;
@@ -33,17 +39,22 @@
 
 .navLink {
   text-decoration: none;
-  color: #333;
-  font-size: 0.9rem;
-  transition: color 0.3s ease;
+  color: #f0f0f0;
+  font-size: 1rem;
+  transition: color 0.3s ease, background 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 
 .navLink:hover {
-  color: #959898;
+  color: #ffffff;
+  background: linear-gradient(135deg, #3a3a4b, #2d2d3a);
 }
 
 .activeLink {
-  color: #0099cc;
+  color: #4caf50;
+  font-weight: bold;
+  border-bottom: 2px solid #4caf50;
 }
 
 .hamburger {
@@ -62,7 +73,7 @@
   display: block;
   width: 100%;
   height: 3px;
-  background: #333;
+  background: #f0f0f0;
   border-radius: 2px;
   margin: 4px 0;
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -82,7 +93,7 @@
 
 @media (max-width: 450px) {
   .navbar {
-    width: 90%;
+    width: 95%;
   }
 
   .logoImage {
@@ -105,14 +116,14 @@
     left: 0;
     width: 100%;
     height: auto;
-    background: #f8f8f8;
+    background: linear-gradient(135deg, #1c1c28, #2a2a3b);
     justify-content: center;
     align-items: center;
     animation: slideDown 0.5s ease;
     z-index: 1000;
     padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 8px 8px;
   }
 
   .menu ul {
@@ -124,15 +135,17 @@
   }
 
   .navLink {
-    font-size: 1.5rem;
-    color: #333;
+    font-size: 1.2rem;
+    color: #f0f0f0;
     text-align: center;
     padding: 10px;
     width: 100%;
+    border-radius: 4px;
   }
 
   .navLink:hover {
-    color: #0099cc;
+    color: #ffffff;
+    background: linear-gradient(135deg, #3a3a4b, #2d2d3a);
   }
 }
 

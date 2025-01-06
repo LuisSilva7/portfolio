@@ -20,25 +20,33 @@ import postmanImage from "../../assets/images/skills/postman.png";
 import intellijImage from "../../assets/images/skills/intellij.png";
 import vscodeImage from "../../assets/images/skills/vscode.png";
 
-const skillImages = [
-  javaImage,
-  javascriptImage,
-  pythonImage,
-  cImage,
-  htmlImage,
-  cssImage,
-  sqlImage,
-  bashImage,
-  springbootImage,
-  quarkusImage,
-  reactImage,
-  vueImage,
-  githubImage,
-  postmanImage,
-  dockerImage,
-  intellijImage,
-  vscodeImage,
-  netlifyImage,
+const skillData = [
+  { image: javaImage, name: "Java", description: "OOP Language" },
+  {
+    image: javascriptImage,
+    name: "JavaScript",
+    description: "Web Development",
+  },
+  { image: pythonImage, name: "Python", description: "AI & Scripting" },
+  { image: cImage, name: "C", description: "Low-Level Coding" },
+  { image: htmlImage, name: "HTML", description: "Web Structure" },
+  { image: cssImage, name: "CSS", description: "Web Styling" },
+  { image: sqlImage, name: "SQL", description: "Database Queries" },
+  { image: bashImage, name: "Bash", description: "Shell Scripting" },
+  {
+    image: springbootImage,
+    name: "Spring Boot",
+    description: "Java Framework",
+  },
+  { image: quarkusImage, name: "Quarkus", description: "Cloud Native" },
+  { image: reactImage, name: "React", description: "Frontend Library" },
+  { image: vueImage, name: "Vue", description: "Lightweight Framework" },
+  { image: githubImage, name: "GitHub", description: "Version Control" },
+  { image: postmanImage, name: "Postman", description: "API Testing" },
+  { image: dockerImage, name: "Docker", description: "Containerization" },
+  { image: intellijImage, name: "IntelliJ IDEA", description: "Java IDE" },
+  { image: vscodeImage, name: "VS Code", description: "Code Editor" },
+  { image: netlifyImage, name: "Netlify", description: "Hosting Platform" },
 ];
 
 const SkillSet = () => {
@@ -51,14 +59,19 @@ const SkillSet = () => {
           try to improve my knowledge and learn something new with each new
           project.
         </p>
-        <div className={styles.iconsGrid}>
-          {skillImages.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`Skill ${index + 1}`}
-              className={styles.iconImage}
-            />
+        <div className={styles.skillsGrid}>
+          {skillData.map((skill, index) => (
+            <div key={index} className={styles.skillCard}>
+              <img
+                src={skill.image}
+                alt={skill.name}
+                className={styles.skillImage}
+              />
+              <div className={styles.skillInfo}>
+                <h3 className={styles.skillName}>{skill.name}</h3>
+                <p className={styles.skillDescription}>{skill.description}</p>
+              </div>
+            </div>
           ))}
         </div>
       </div>

@@ -2,10 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  background-color: #003366;
-  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: linear-gradient(135deg, #1c1c28, #2a2a3b);
+  color: #f0f0f0;
 }
 
 .content {
@@ -15,7 +15,7 @@
   justify-content: center;
   text-align: center;
   width: 60%;
-  gap: 10px;
+  gap: 15px;
 }
 
 .logo {
@@ -31,22 +31,24 @@
 .text {
   font-size: 0.9rem;
   margin: 10px 0;
+  color: #cccccc;
 }
 
 .socialIcons {
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
 .icon {
   font-size: 1.5rem;
-  color: #fff;
-  transition: color 0.3s ease;
+  color: #f0f0f0;
+  transition: color 0.3s ease, transform 0.3s ease;
   text-decoration: none;
 }
 
 .icon:hover {
-  color: #0099cc;
+  color: #4caf50;
+  transform: scale(1.1);
 }
 
 @media (min-width: 768px) {
