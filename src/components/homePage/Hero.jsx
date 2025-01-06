@@ -7,10 +7,7 @@ const Hero = () => {
       <div className={styles.animationBackground}></div>
       <div className={styles.heroContent}>
         <h1>Hi, I'm Luís Silva</h1>
-        <p>
-          A passionate developer creating modern and efficient software
-          solutions
-        </p>
+        <p>An enthusiastic developer that enjoys building software</p>
       </div>
     </div>
   );
