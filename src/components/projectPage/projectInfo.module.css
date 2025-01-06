@@ -5,19 +5,22 @@
   width: 60%;
   margin: 0 auto;
   padding: 50px 0;
+  color: #f0f0f0;
 }
 
 .carouselContainer {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .detailsContainer {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 20px;
 }
 
 .leftSection,
@@ -29,12 +32,14 @@
 .rightSection h2 {
   font-size: 2rem;
   margin: 20px 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 .technologiesTitle {
   font-size: 1.2rem;
   margin: 20px 0;
-  color: #555;
+  color: #cccccc;
 }
 
 .technologiesList {
@@ -51,6 +56,9 @@
   height: 70px;
   object-fit: contain;
   transition: transform 0.3s ease, opacity 0.3s ease;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
 }
 
 .techImage:hover {
@@ -59,24 +67,27 @@
 }
 
 .viewCodeButton {
+  margin-top: 20px;
   display: inline-block;
   padding: 10px 20px;
   font-size: 1rem;
-  color: #333;
-  border: 1px solid #333;
+  color: #ffffff;
+  border: 1px solid #4caf50;
   text-decoration: none;
+  background: transparent;
   transition: all 0.3s ease;
-  margin-top: 20px;
+  border-radius: 8px;
 }
 
 .viewCodeButton:hover {
-  background-color: #333;
-  color: #fff;
+  background-color: #388e3c;
+  color: #ffffff;
+  border-color: #388e3c;
 }
 
 .topLine {
   border: none;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
   margin-bottom: 20px;
 }
 
@@ -102,4 +113,50 @@
 
 .sideBySideLayout .leftSection {
   margin-right: 20px;
+}
+
+@media (max-width: 900px) {
+  .projectInfoSection {
+    width: 90%;
+    padding: 30px 0;
+  }
+
+  .carouselContainer {
+    width: 100%;
+  }
+
+  .detailsContainer {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .technologiesList {
+    justify-content: center;
+  }
+
+  .viewCodeButton {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .leftSection h2,
+  .rightSection h2 {
+    font-size: 1.8rem;
+  }
+
+  .technologiesTitle {
+    font-size: 1rem;
+  }
+
+  .techImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .viewCodeButton {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
 }

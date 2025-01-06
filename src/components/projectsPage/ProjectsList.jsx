@@ -5,6 +5,7 @@ import project1Image from "../../assets/images/projects/taskly/taskly.png";
 import project2Image from "../../assets/images/projects/movieVerse/movieVerse.png";
 import project3Image from "../../assets/images/projects/healthLink/healthLink.png";
 import project4Image from "../../assets/images/projects/parkTub/parkTub.jpg";
+import project4Image2 from "../../assets/images/projects/parkTub/home2.jpg";
 
 const projects = [
   {
@@ -36,45 +37,67 @@ const projects = [
     title: "ParkTub",
     description:
       "ParkTub is an innovative platform designed to streamline parking management for users of Transportes Urbanos de Braga (TUB). With real-time updates on parking availability, seamless payment options, and personalized bonuses, ParkTub enhances the parking experience for urban mobility users.",
-    image: project4Image,
+    images: [project4Image, project4Image2],
     link: "/projects/4",
-    isMobile: true,
   },
 ];
 
 const Projects = () => {
   return (
     <section className={styles.projectsSection}>
-      {projects.map((project) => (
-        <div
-          key={project.id}
-          className={`${styles.projectContent} ${
-            project.isMobile ? styles.mobileProject : ""
-          }`}
-        >
-          <div className={styles.imageContainer}>
-            <img
-              src={project.image}
-              alt={project.title}
-              className={`${styles.image} ${
-                project.isMobile ? styles.mobileImage : ""
-              }`}
-            />
-          </div>
-          <div className={styles.textContainer}>
-            <div className={styles.topPart}>
-              <hr className={styles.topLine} />
-              <h2>{project.title}</h2>
-              <p>{project.description}</p>
+      {projects.map((project) =>
+        project.id === 4 ? (
+          <div
+            key={project.id}
+            className={`${styles.projectContent} ${styles.project4Content}`}
+          >
+            <div className={styles.dualImageContainer}>
+              {project.images.map((img, index) => (
+                <img
+                  key={index}
+                  src={img}
+                  alt={`${project.title} - View ${index + 1}`}
+                  className={`${styles.image} ${styles.project4Image}`}
+                />
+              ))}
             </div>
-            <div className={styles.bottomPart}>
-              <Link to={project.link} className={styles.button}>
-                VIEW PROJECT
-              </Link>
+            <div className={styles.textContainer}>
+              <div className={styles.topPart}>
+                <hr className={styles.topLine} />
+                <h2>{project.title}</h2>
+                <p>{project.description}</p>
+              </div>
+              <div className={styles.bottomPart}>
+                <Link to={project.link} className={styles.button}>
+                  VIEW PROJECT
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ) : (
+          <div key={project.id} className={styles.projectContent}>
+            <div className={styles.imageContainer}>
+              <img
+                src={project.image}
+                alt={project.title}
+                className={styles.image}
+              />
+            </div>
+            <div className={styles.textContainer}>
+              <div className={styles.topPart}>
+                <hr className={styles.topLine} />
+                <h2>{project.title}</h2>
+                <p>{project.description}</p>
+              </div>
+              <div className={styles.bottomPart}>
+                <Link to={project.link} className={styles.button}>
+                  VIEW PROJECT
+                </Link>
+              </div>
+            </div>
+          </div>
+        )
+      )}
     </section>
   );
 };
