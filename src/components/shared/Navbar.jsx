@@ -62,7 +62,7 @@ const Navbar = () => {
                 SKILLS
               </Link>
             </li>
-            <li>
+            {/*<li>
               <Link
                 to="/contact"
                 className={`${styles.navLink} ${
@@ -71,7 +71,7 @@ const Navbar = () => {
               >
                 CONTACT ME
               </Link>
-            </li>
+            </li>*/}
           </ul>
         </nav>
       </div>

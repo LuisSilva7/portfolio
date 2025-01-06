@@ -55,8 +55,8 @@ const SkillSet = () => {
       <div className={styles.skillSetContent}>
         <h2 className={styles.title}>Skill Set</h2>
         <p className={styles.introduction}>
-          These are the technologies I use to build various projects. I always
-          try to improve my knowledge and learn something new with each new
+          Here are the technologies and tools I use to create diverse projects.
+          I always try to improve my knowledge and learn something new with each
           project.
         </p>
         <div className={styles.skillsGrid}>

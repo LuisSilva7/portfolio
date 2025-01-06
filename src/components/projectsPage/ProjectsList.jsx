@@ -12,7 +12,7 @@ const projects = [
     id: 1,
     title: "Taskly",
     description:
-      "Taskly is a comprehensive productivity platform designed to streamline project management, task organization, and team collaboration. With Taskly, users can effortlessly create, assign, and track tasks, ensuring that every project stays on schedule and every team member remains aligned.",
+      "Taskly is an all-in-one productivity platform built to simplify project management, task organization, and team communication. With Taskly, you can easily create projects, assign tasks, and track progress, ensuring teams stay aligned and projects remain on schedule. It also features a built-in chat and comment system, making collaboration seamless and keeping everyone connected in real-time.",
     image: project1Image,
     link: "/projects/1",
   },
@@ -20,7 +20,7 @@ const projects = [
     id: 2,
     title: "MovieVerse",
     description:
-      "MovieVerse is an intuitive e-commerce platform designed to make buying movies online effortless and enjoyable. With a sleek user interface and a powerful backend, MovieVerse provides a seamless experience for users to explore, filter, and purchase their favorite movies.",
+      "MovieVerse is a user-friendly e-commerce platform designed to make buying movies online simple and enjoyable. With an elegant and intuitive interface, users can seamlessly explore a wide selection of films. The platform includes filtering options to help find movies quickly and efficiently. Backed by a robust system, MovieVerse ensures a smooth and reliable purchasing experience for all users.",
     image: project2Image,
     link: "/projects/2",
   },
@@ -28,7 +28,7 @@ const projects = [
     id: 3,
     title: "HealthLink",
     description:
-      "HealthLink is an easy-to-use platform that revolutionizes the way medical appointments are scheduled. By providing a seamless online booking system, users can effortlessly select their preferred date and time for appointments, while healthcare providers can optimize their schedules efficiently.",
+      "Scheduling appointments is easier than ever with HealthLink, a user-friendly platform designed for simplicity and efficiency. With a streamlined online booking system, users can easily choose their preferred date and time. Healthcare providers benefit from tools to manage and optimize their schedules effectively. HealthLink bridges the gap between patients and providers, ensuring an efficient experience for all.",
     image: project3Image,
     link: "/projects/3",
   },
@@ -36,7 +36,7 @@ const projects = [
     id: 4,
     title: "ParkTub",
     description:
-      "ParkTub is an innovative platform designed to streamline parking management for users of Transportes Urbanos de Braga (TUB). With real-time updates on parking availability, seamless payment options, and personalized bonuses, ParkTub enhances the parking experience for urban mobility users.",
+      "ParkTub is a mobile platform that simplifies parking management for users of Transportes Urbanos de Braga (TUB). Offering real-time updates on parking availability, integrated payment solutions, and personalized rewards, ParkTub elevates the parking experience for urban commuters. With its user-friendly interface, it ensures convenient and efficient parking for a stress-free mobility experience.",
     images: [project4Image, project4Image2],
     link: "/projects/4",
   },
