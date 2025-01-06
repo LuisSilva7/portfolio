@@ -1,31 +1,24 @@
 .contactSection {
-  width: 100%; /* Ocupa 100% da largura da página */
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(
-    100vh - 120px
-  ); /* Altura mínima: 100% da viewport menos a navbar e o footer */
+  min-height: calc(100vh - 120px);
   padding: 50px 0;
-  background: linear-gradient(
-    135deg,
-    #1c1c28,
-    #2a2a3b,
-    #1f1f32
-  ); /* Fundo escuro */
+  background: linear-gradient(135deg, #1c1c28, #2a2a3b, #1f1f32);
   color: #f0f0f0;
 }
 
 .contactContent {
-  width: 60%; /* Centraliza o conteúdo */
+  width: 60%;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap; /* Permite quebras em telas pequenas */
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .leftSection {
-  flex: 1 1 100%; /* Ocupa 100% em telas pequenas */
+  flex: 1 1 100%;
   text-align: center;
 }
 
@@ -38,7 +31,7 @@
 }
 
 .rightSection {
-  flex: 2 1 100%; /* Ocupa 100% em telas pequenas */
+  flex: 2 1 100%;
 }
 
 .contactForm {
@@ -59,7 +52,7 @@
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #555;
-  background-color: #2a2a3b; /* Fundo escuro */
+  background-color: #2a2a3b;
   color: #ffffff;
   border-radius: 8px;
 }
@@ -86,7 +79,7 @@
 }
 
 .button:hover {
-  background-color: #388e3c; /* Verde mais escuro */
+  background-color: #388e3c;
   color: #ffffff;
   border-color: #388e3c;
 }
@@ -105,17 +98,17 @@
 .emailLink {
   font-size: 1.1rem;
   color: #4caf50;
-  text-decoration: underline; /* Sublinha o texto */
+  text-decoration: underline;
   font-weight: bold;
 }
 
 .emailLink:hover {
-  color: #388e3c; /* Verde mais escuro no hover */
+  color: #388e3c;
 }
 
 @media (max-width: 900px) {
   .contactContent {
-    width: 90%; /* Ajusta largura para telas menores */
+    width: 90%;
   }
 
   .rightSection {
