@@ -95,7 +95,6 @@
   margin-top: 10px;
 }
 
-/* Responsividade */
 @media (max-width: 1100px) {
   .aboutContent {
     flex-direction: column;
@@ -108,8 +107,8 @@
 
   .textContainer {
     order: 2;
-    text-align: left; /* Alinha o texto à esquerda */
-    align-items: flex-start; /* Alinha os itens à esquerda */
+    text-align: left;
+    align-items: flex-start;
   }
 }
 
