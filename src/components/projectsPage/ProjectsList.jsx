@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./projectsList.module.css";
 import project1Image from "../../assets/images/projects/taskly/taskly.png";
-import project2Image from "../../assets/images/projects/movieVerse/movieVerse.png";
-import project3Image from "../../assets/images/projects/healthLink/healthLink.png";
-import project4Image from "../../assets/images/projects/parkTub/parkTub.jpg";
+import project2Image from "../../assets/images/projects/movieVerse/movieverse.png";
+import project3Image from "../../assets/images/projects/healthLink/healthlink.png";
+import project4Image from "../../assets/images/projects/parkTub/parktub.jpg";
 import project4Image2 from "../../assets/images/projects/parkTub/home2.jpg";
 
 const projects = [
