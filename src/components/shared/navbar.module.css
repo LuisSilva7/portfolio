@@ -46,15 +46,15 @@
   border-radius: 4px;
 }
 
-.navLink:hover {
-  color: #ffffff;
-  background: linear-gradient(135deg, #3a3a4b, #2d2d3a);
+.activeLink {
+  color: #4682b4;
+  font-weight: bold;
+  border-bottom: 2px solid #4682b4;
 }
 
-.activeLink {
-  color: #4caf50;
-  font-weight: bold;
-  border-bottom: 2px solid #4caf50;
+.navLink:hover {
+  color: #ffffff;
+  background: linear-gradient(135deg, #3a3a4b, #2d2d4a);
 }
 
 .hamburger {
