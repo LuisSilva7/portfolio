@@ -1,26 +1,24 @@
 import React from "react";
-import styles from "./projectInfo.module.css";
+import styles from "./projectMobileInfo.module.css";
 import Carousel from "./Carousel";
 
-const ProjectInfo = ({ project }) => {
+const ProjectMobileInfo = ({ project }) => {
   if (!project) {
     return <p>Project not found</p>;
   }
 
   return (
-    <section className={styles.projectInfoSection}>
+    <section className={styles.projectMobileInfoSection}>
       <div className={styles.carouselContainer}>
         <Carousel images={project.images} />
       </div>
       <div className={styles.detailsContainer}>
-        <div className={styles.leftSection}>
-          <hr className={styles.topLine} />
-          <h2>{project.title} - Background</h2>
-          <p>{project.description}</p>
+        <div className={styles.titleSection}>
+          <h2>{project.title}</h2>
+          <p className={styles.techText}>{project.techText}</p>
         </div>
-        <div className={styles.rightSection}>
-          <hr className={styles.topLine} />
-          <h2>Tech Stack</h2>
+        <div className={styles.technologiesSection}>
+          <h3>Technologies</h3>
           <ul className={styles.technologiesList}>
             {project.technologies.map((tech) => (
               <li key={tech.name}>
@@ -32,6 +30,12 @@ const ProjectInfo = ({ project }) => {
               </li>
             ))}
           </ul>
+        </div>
+        <div className={styles.descriptionSection}>
+          <h3>Project Background</h3>
+          <p>{project.description}</p>
+        </div>
+        <div className={styles.githubSection}>
           <a
             href={project.github}
             target="_blank"
@@ -46,4 +50,4 @@ const ProjectInfo = ({ project }) => {
   );
 };
 
-export default ProjectInfo;
+export default ProjectMobileInfo;
