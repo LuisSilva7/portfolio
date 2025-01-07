@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 import ProjectInfo from "../components/projectPage/ProjectInfo";
-import ProjectMobileInfo from "../components/projectPage/ProjectMobileInfo";
 import taskly1 from "../assets/images/projects/taskly/taskly.png";
 import taskly2 from "../assets/images/projects/taskly/dashboard.png";
 import taskly3 from "../assets/images/projects/taskly/projects.png";
@@ -103,6 +103,10 @@ const projectData = {
 };
 
 const ProjectPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { id } = useParams();
   const project = projectData[id];
 

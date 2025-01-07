@@ -33,15 +33,14 @@
   margin-bottom: 20px;
   color: #ffffff;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
-  text-align: center;
 }
 
 .introduction {
-  font-size: 1.5rem;
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.2rem;
   line-height: 1.8;
   color: #cccccc;
   margin-bottom: 40px;
-  text-align: center;
 }
 
 .skillsGrid {
@@ -77,14 +76,16 @@
 }
 
 .skillName {
-  font-size: 1.6rem;
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.5rem;
   font-weight: bold;
   margin: 0 0 5px;
   color: #ffffff;
 }
 
 .skillDescription {
-  font-size: 1.2rem;
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.1rem;
   color: #bbbbbb;
 }
 
