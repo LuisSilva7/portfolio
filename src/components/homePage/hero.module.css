@@ -10,6 +10,7 @@
   overflow: hidden;
   background: linear-gradient(135deg, #1c1c28, #2a2a3b, #1f1f32);
   color: #ffffff;
+  margin-top: 4rem;
 }
 
 .heroContent {

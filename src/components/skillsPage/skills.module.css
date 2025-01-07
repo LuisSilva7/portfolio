@@ -6,6 +6,7 @@
   background: linear-gradient(135deg, #1c1c28, #2a2a3b, #1f1f32);
   background-size: 200% 200%;
   animation: backgroundShift 10s ease infinite;
+  margin-top: 4rem;
 }
 
 @keyframes backgroundShift {
@@ -49,7 +50,7 @@
   margin-bottom: 20px;
   color: #ffffff;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
   padding-bottom: 10px;
 }
 
