@@ -1,24 +1,49 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import styles from "./projectMobileInfo.module.css";
 import Carousel from "./Carousel";
 
 const ProjectMobileInfo = ({ project }) => {
+  const [dimensions, setDimensions] = useState({
+    width: "100%",
+    height: "auto",
+  });
+
+  useEffect(() => {
+    const updateSize = () => {
+      const width = document.querySelector(
+        `.${styles.leftSection}`
+      ).offsetWidth;
+      const height = width * 2; // Mantém a proporção 1:2 (550x1100)
+      setDimensions({ width, height });
+    };
+
+    updateSize();
+    window.addEventListener("resize", updateSize);
+
+    return () => {
+      window.removeEventListener("resize", updateSize);
+    };
+  }, []);
+
   if (!project) {
     return <p>Project not found</p>;
   }
 
   return (
     <section className={styles.projectMobileInfoSection}>
-      <div className={styles.carouselContainer}>
-        <Carousel images={project.images} />
+      <div
+        className={styles.leftSection}
+        style={{ height: `${dimensions.height}px` }}
+      >
+        <Carousel images={project.images} className={styles.carousel} />
       </div>
-      <div className={styles.detailsContainer}>
-        <div className={styles.titleSection}>
-          <h2>{project.title}</h2>
-          <p className={styles.techText}>{project.techText}</p>
+      <div className={styles.rightSection}>
+        <div className={styles.backgroundSection}>
+          <h2>{project.title} - Background</h2>
+          <p>{project.description}</p>
         </div>
-        <div className={styles.technologiesSection}>
-          <h3>Technologies</h3>
+        <div className={styles.techStackSection}>
+          <h2>Tech Stack</h2>
           <ul className={styles.technologiesList}>
             {project.technologies.map((tech) => (
               <li key={tech.name}>
@@ -30,20 +55,6 @@ const ProjectMobileInfo = ({ project }) => {
               </li>
             ))}
           </ul>
-        </div>
-        <div className={styles.descriptionSection}>
-          <h3>Project Background</h3>
-          <p>{project.description}</p>
-        </div>
-        <div className={styles.githubSection}>
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.viewCodeButton}
-          >
-            VIEW CODE
-          </a>
         </div>
       </div>
     </section>

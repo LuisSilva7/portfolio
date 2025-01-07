@@ -10,7 +10,7 @@ const Footer = () => {
         <div className={styles.logo}>
           <img src={logoImage} alt="Logo" className={styles.logoImage} />
         </div>
-        <p className={styles.text}>© All Rights Reserved to Luís Silva</p>
+        <p className={styles.text}>© All Rights Reserved</p>
         <div className={styles.socialIcons}>
           <a
             href="https://www.linkedin.com/in/luis-silva7/"
