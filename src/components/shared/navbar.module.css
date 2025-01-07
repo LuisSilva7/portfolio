@@ -30,6 +30,7 @@
 }
 
 .menu ul {
+  font-family: "Public Sans", sans-serif;
   display: flex;
   gap: 30px;
   list-style: none;
@@ -40,21 +41,18 @@
 .navLink {
   text-decoration: none;
   color: #f0f0f0;
-  font-size: 1rem;
+  font-size: 0.9rem;
   transition: color 0.3s ease, background 0.3s ease;
   padding: 5px 10px;
   border-radius: 4px;
 }
 
 .activeLink {
-  color: #4682b4;
-  font-weight: bold;
-  border-bottom: 2px solid #4682b4;
+  color: #3a7dbf;
 }
 
 .navLink:hover {
-  color: #ffffff;
-  background: linear-gradient(135deg, #3a3a4b, #2d2d4a);
+  color: #a5a5a5;
 }
 
 .hamburger {
