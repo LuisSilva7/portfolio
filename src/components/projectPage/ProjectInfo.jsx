@@ -16,8 +16,13 @@ const ProjectInfo = ({ project }) => {
         <div className={styles.leftSection}>
           <hr className={styles.topLine} />
           <h2>{project.title} - Background</h2>
-          <p>{project.description}</p>
+          <ul className={styles.bulletPoints}>
+            {project.points.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </ul>
         </div>
+
         <div className={styles.rightSection}>
           <hr className={styles.topLine} />
           <h2>Tech Stack</h2>

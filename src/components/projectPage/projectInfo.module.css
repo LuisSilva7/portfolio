@@ -49,8 +49,18 @@
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
 }
 
-.leftSection p {
+.bulletPoints {
   font-family: "Public Sans", sans-serif;
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 20px 0;
+  color: #cccccc;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.bulletPoints li {
+  margin-bottom: 10px;
 }
 
 .technologiesTitle {
