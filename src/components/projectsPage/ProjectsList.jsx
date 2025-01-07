@@ -45,59 +45,47 @@ const projects = [
 const Projects = () => {
   return (
     <section className={styles.projectsSection}>
-      {projects.map((project) =>
-        project.id === 4 ? (
-          <div
-            key={project.id}
-            className={`${styles.projectContent} ${styles.project4Content}`}
-          >
-            <div className={styles.dualImageContainer}>
-              {project.images.map((img, index) => (
-                <img
-                  key={index}
-                  src={img}
-                  alt={`${project.title} - View ${index + 1}`}
-                  className={`${styles.image} ${styles.project4Image}`}
-                />
-              ))}
-            </div>
-            <div className={styles.textContainer}>
-              <div className={styles.topPart}>
-                <hr className={styles.topLine} />
-                <h2>{project.title}</h2>
-                <p>{project.description}</p>
+      {projects.map((project) => (
+        <div
+          key={project.id}
+          className={`${styles.projectContent} ${
+            project.id === 4 ? styles.project4Content : ""
+          }`}
+        >
+          <div className={styles.imageContainer}>
+            {project.id === 4 ? (
+              <div className={styles.dualImageContainer}>
+                {project.images.map((img, index) => (
+                  <img
+                    key={index}
+                    src={img}
+                    alt={`${project.title} - View ${index + 1}`}
+                    className={styles.image}
+                  />
+                ))}
               </div>
-              <div className={styles.bottomPart}>
-                <Link to={project.link} className={styles.button}>
-                  VIEW PROJECT
-                </Link>
-              </div>
-            </div>
-          </div>
-        ) : (
-          <div key={project.id} className={styles.projectContent}>
-            <div className={styles.imageContainer}>
+            ) : (
               <img
                 src={project.image}
                 alt={project.title}
                 className={styles.image}
               />
+            )}
+          </div>
+          <div className={styles.textContainer}>
+            <div className={styles.topPart}>
+              <hr className={styles.topLine} />
+              <h2>{project.title}</h2>
+              <p>{project.description}</p>
             </div>
-            <div className={styles.textContainer}>
-              <div className={styles.topPart}>
-                <hr className={styles.topLine} />
-                <h2>{project.title}</h2>
-                <p>{project.description}</p>
-              </div>
-              <div className={styles.bottomPart}>
-                <Link to={project.link} className={styles.button}>
-                  VIEW PROJECT
-                </Link>
-              </div>
+            <div className={styles.bottomPart}>
+              <Link to={project.link} className={styles.button}>
+                VIEW PROJECT
+              </Link>
             </div>
           </div>
-        )
-      )}
+        </div>
+      ))}
     </section>
   );
 };
