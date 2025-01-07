@@ -28,6 +28,9 @@ import mapsapi from "../assets/images/skills/mapsapi.png";
 import stripe from "../assets/images/skills/stripe.png";
 import kafka from "../assets/images/skills/kafka.png";
 import niop from "../assets/images/skills/niop.png";
+import parkTub4 from "../assets/images/projects/parkTub/home5.png";
+import parkTub5 from "../assets/images/projects/parkTub/home6.png";
+import parkTub6 from "../assets/images/projects/parkTub/home7.png";
 
 const projectData = {
   1: {
@@ -79,7 +82,7 @@ const projectData = {
   },
   4: {
     title: "ParkTub",
-    images: [parkTub1, parkTub2, parkTub3],
+    images: [parkTub4, parkTub5, parkTub6],
     technologies: [
       { name: "Java", image: java },
       { name: "Springboot", image: springboot },
@@ -109,11 +112,7 @@ const ProjectPage = () => {
 
   return (
     <>
-      {id === "4" ? (
-        <ProjectMobileInfo project={project} />
-      ) : (
-        <ProjectInfo project={project} />
-      )}
+      <ProjectInfo project={project} />
     </>
   );
 };
