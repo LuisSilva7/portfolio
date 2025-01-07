@@ -104,6 +104,29 @@
   border-color: #253d5f;
 }
 
+.technologiesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.technologyTag {
+  font-family: "Public Sans", sans-serif;
+  padding: 5px 10px;
+  background-color: #2a2a3b;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.technologyTag:hover {
+  transform: scale(1.05);
+}
+
 @media (max-width: 1200px) {
   .projectContent {
     flex-direction: column;
@@ -148,5 +171,10 @@
   .button {
     width: 100%;
     text-align: center;
+  }
+
+  .technologyTag {
+    font-size: 0.8rem;
+    padding: 4px 8px;
   }
 }

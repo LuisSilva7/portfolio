@@ -66,16 +66,6 @@ const Navbar = () => {
                 SKILLS
               </Link>
             </li>
-            {/*<li>
-              <Link
-                to="/contact"
-                className={`${styles.navLink} ${
-                  location.pathname === "/contact" ? styles.activeLink : ""
-                }`}
-              >
-                CONTACT ME
-              </Link>
-            </li>*/}
           </ul>
         </nav>
       </div>

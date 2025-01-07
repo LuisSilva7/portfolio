@@ -4,41 +4,44 @@ import styles from "./projectsList.module.css";
 import project1Image from "../../assets/images/projects/taskly/taskly.png";
 import project2Image from "../../assets/images/projects/movieVerse/movieverse.png";
 import project3Image from "../../assets/images/projects/healthLink/healthlink.png";
-import project4Image from "../../assets/images/projects/parkTub/parktub.jpg";
-import project4Image2 from "../../assets/images/projects/parkTub/home2.jpg";
+import project4Image from "../../assets/images/projects/parkTub/home5.png";
 
 const projects = [
   {
     id: 1,
     title: "Taskly",
     description:
-      "Taskly is an all-in-one productivity platform built to simplify project management, task organization, and team communication. With Taskly, you can easily create projects, assign tasks, and track progress, ensuring teams stay aligned and projects remain on schedule. It also features a built-in chat and comment system, making collaboration seamless and keeping everyone connected in real-time.",
-    image: project1Image,
+      "Taskly is a platform designed to streamline project management and team communication. It allows users to create projects, assign tasks, and track progress while offering a built-in chat system for real-time collaboration.",
+    images: [project1Image],
     link: "/projects/1",
+    technologies: ["Java", "Spring Boot", "PostgreSQL", "VueJS"],
   },
   {
     id: 2,
     title: "MovieVerse",
     description:
-      "MovieVerse is a user-friendly e-commerce platform designed to make buying movies online simple and enjoyable. With an elegant and intuitive interface, users can seamlessly explore a wide selection of films. The platform includes filtering options to help find movies quickly and efficiently. Backed by a robust system, MovieVerse ensures a smooth and reliable purchasing experience for all users.",
-    image: project2Image,
+      "MovieVerse is an e-commerce platform designed for online movie shopping. It provides a simple interface with filtering options to browse a large collection of films and includes a secure payment system for reliable purchases.",
+    images: [project2Image],
     link: "/projects/2",
+    technologies: ["Java", "Spring Boot", "MySQL", "React"],
   },
   {
     id: 3,
     title: "HealthLink",
     description:
-      "Scheduling appointments is easier than ever with HealthLink, a user-friendly platform designed for simplicity and efficiency. With a streamlined online booking system, users can easily choose their preferred date and time. Healthcare providers benefit from tools to manage and optimize their schedules effectively. HealthLink bridges the gap between patients and providers, ensuring an efficient experience for all.",
-    image: project3Image,
+      "HealthLink makes scheduling appointments simple and efficient. With an intuitive booking system, users can select their preferred date and time, while healthcare providers can effectively manage and optimize their schedules.",
+    images: [project3Image],
     link: "/projects/3",
+    technologies: ["React"],
   },
   {
     id: 4,
     title: "ParkTub",
     description:
-      "ParkTub is a mobile platform that simplifies parking management for users of Transportes Urbanos de Braga (TUB). Offering real-time updates on parking availability, integrated payment solutions, and personalized rewards, ParkTub elevates the parking experience for urban commuters. With its user-friendly interface, it ensures convenient and efficient parking for a stress-free mobility experience.",
-    images: [project4Image, project4Image2],
+      "ParkTub is a mobile platform designed to simplify parking for users of Transportes Urbanos de Braga (TUB). It provides real-time parking availability updates, integrated payments, and rewards, offering an efficient parking experience.",
+    images: [project4Image],
     link: "/projects/4",
+    technologies: ["Java", "Spring Boot", "MySQL", "React"],
   },
 ];
 
@@ -46,37 +49,31 @@ const Projects = () => {
   return (
     <section className={styles.projectsSection}>
       {projects.map((project) => (
-        <div
-          key={project.id}
-          className={`${styles.projectContent} ${
-            project.id === 4 ? styles.project4Content : ""
-          }`}
-        >
+        <div key={project.id} className={styles.projectContent}>
           <div className={styles.imageContainer}>
-            {project.id === 4 ? (
-              <div className={styles.dualImageContainer}>
-                {project.images.map((img, index) => (
-                  <img
-                    key={index}
-                    src={img}
-                    alt={`${project.title} - View ${index + 1}`}
-                    className={styles.image}
-                  />
-                ))}
-              </div>
-            ) : (
-              <img
-                src={project.image}
-                alt={project.title}
-                className={styles.image}
-              />
-            )}
+            <div className={styles.dualImageContainer}>
+              {project.images.map((img, index) => (
+                <img
+                  key={index}
+                  src={img}
+                  alt={`${project.title} - View ${index + 1}`}
+                  className={styles.image}
+                />
+              ))}
+            </div>
           </div>
           <div className={styles.textContainer}>
             <div className={styles.topPart}>
               <hr className={styles.topLine} />
               <h2>{project.title}</h2>
               <p>{project.description}</p>
+              <div className={styles.technologiesContainer}>
+                {project.technologies.map((tech, index) => (
+                  <span key={index} className={styles.technologyTag}>
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
             <div className={styles.bottomPart}>
               <Link to={project.link} className={styles.button}>

@@ -34,6 +34,7 @@ import parkTub6 from "../assets/images/projects/parkTub/home7.png";
 
 const projectData = {
   1: {
+    id: 1,
     title: "Taskly",
     images: [taskly1, taskly2, taskly3],
     technologies: [
@@ -55,6 +56,7 @@ const projectData = {
     github: "https://github.com/LuisSilva7/taskly-project",
   },
   2: {
+    id: 2,
     title: "MovieVerse",
     images: [movieVerse1, movieVerse2, movieVerse3],
     technologies: [
@@ -77,6 +79,7 @@ const projectData = {
     github: "https://github.com/LuisSilva7/movieVerse-project",
   },
   3: {
+    id: 3,
     title: "HealthLink",
     images: [healthLink1, healthLink2, healthLink3],
     technologies: [
@@ -96,6 +99,7 @@ const projectData = {
     github: "https://github.com/LuisSilva7/healthLink-project",
   },
   4: {
+    id: 4,
     title: "ParkTub",
     images: [parkTub4, parkTub5, parkTub6],
     technologies: [

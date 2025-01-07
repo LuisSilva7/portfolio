@@ -17,11 +17,12 @@ const About = () => {
             <p>
               I'm a Master's student in Engineering and Management of
               Information Systems, based in Braga, with a passion for
-              problem-solving and software development. My expertise lies in
-              backend development, primarily using Java and Spring Boot, paired
-              with the capability to manage frontend tasks, allowing me to
-              deliver end-to-end solutions. I'm driven by curiosity and the
-              excitement of exploring new ideas and technologies.
+              problem-solving and software development.
+            </p>
+            <p>
+              My expertise lies in backend development, primarily using Java and
+              Spring Boot, paired with the capability to manage frontend tasks,
+              allowing me to deliver end-to-end solutions.
             </p>
           </div>
           <div className={styles.bottomPart}>

@@ -37,14 +37,26 @@ const ProjectInfo = ({ project }) => {
               </li>
             ))}
           </ul>
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.viewCodeButton}
-          >
-            VIEW CODE
-          </a>
+          <div className={styles.buttonsContainer}>
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.button}
+            >
+              VIEW CODE
+            </a>
+            {project.id === 3 && (
+              <a
+                href="https://healthh-linkk.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.button}
+              >
+                LIVE DEMO
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </section>

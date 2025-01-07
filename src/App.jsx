@@ -10,7 +10,6 @@ import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ProjectPage from "./pages/ProjectPage";
 import SkillsPage from "./pages/SkillsPage";
-import ContactPage from "./pages/ContactPage";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -20,7 +19,6 @@ const App = () => {
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/projects/:id" element={<ProjectPage />} />
         <Route path="/skills" element={<SkillsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
       </Route>
     )
   );

@@ -43,10 +43,21 @@
   margin-bottom: 40px;
 }
 
+.categoryTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+}
+
 .skillsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  margin-bottom: 2rem;
 }
 
 .skillCard {
