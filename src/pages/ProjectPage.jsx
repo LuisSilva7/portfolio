@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import ProjectInfo from "../components/projectPage/ProjectInfo";
 import ProjectMobileInfo from "../components/projectPage/ProjectMobileInfo";
@@ -102,10 +102,6 @@ const projectData = {
 const ProjectPage = () => {
   const { id } = useParams();
   const project = projectData[id];
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   if (!project) {
     return <p>Project not found</p>;

@@ -101,6 +101,10 @@
     padding: 0 15px;
   }
 
+  .logo {
+    margin-top: 10px;
+  }
+
   .menu {
     display: none;
   }
