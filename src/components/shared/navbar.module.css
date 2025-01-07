@@ -91,13 +91,14 @@
   transform: translateY(-7px) rotate(-45deg);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 750px) {
   .navbar {
-    width: 95%;
+    width: 100%;
   }
 
-  .logoImage {
-    height: 40px;
+  .navbarContent {
+    width: 100%;
+    padding: 0 15px;
   }
 
   .menu {
@@ -129,9 +130,10 @@
   .menu ul {
     flex-direction: column;
     gap: 15px;
-    width: 100%;
-    margin: 0;
+    width: 90%;
+    margin: 0 auto;
     padding: 0;
+    align-items: center;
   }
 
   .navLink {
