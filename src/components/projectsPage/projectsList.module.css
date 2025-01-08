@@ -33,6 +33,13 @@
   flex: 1;
   display: flex;
   align-items: stretch;
+  border-radius: 16px;
+  padding: 20px;
+  background: rgba(28, 28, 44, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 3px solid rgba(79, 172, 254, 0.296);
+  box-shadow: 0 0 15px rgba(79, 172, 254, 0.318), 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
 .image {
