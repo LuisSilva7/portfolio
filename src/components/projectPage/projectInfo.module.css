@@ -214,4 +214,8 @@
     padding: 8px 16px;
     font-size: 0.9rem;
   }
+
+  .imageFrame {
+    padding: 5px;
+  }
 }
