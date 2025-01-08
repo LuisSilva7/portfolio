@@ -12,7 +12,7 @@ const CustomCarousel = ({ images }) => {
         showIndicators={true}
         infiniteLoop={true}
         autoPlay={true}
-        interval={5000}
+        interval={3000}
         stopOnHover={true}
         dynamicHeight={false}
       >

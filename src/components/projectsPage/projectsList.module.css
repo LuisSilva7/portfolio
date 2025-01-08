@@ -135,6 +135,26 @@
   transform: scale(1.05);
 }
 
+.projectContent:nth-child(4) .imageContainer {
+  height: 400px;
+  padding: 10px;
+  flex: 0 0 auto;
+}
+
+.projectContent:nth-child(4) .image {
+  height: 100%;
+  object-fit: contain;
+  width: auto;
+}
+
+.projectContent:nth-child(4) {
+  flex-direction: row;
+}
+
+.projectContent:nth-child(4) .imageContainer {
+  align-self: flex-start;
+}
+
 @media (max-width: 1200px) {
   .projectContent {
     flex-direction: column;
@@ -188,5 +208,41 @@
   .technologyTag {
     font-size: 0.8rem;
     padding: 4px 8px;
+  }
+
+  .projectContent:nth-child(4) {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .projectContent:nth-child(4) .topContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projectContent:nth-child(4) .imageContainer {
+    width: 60%;
+    height: auto;
+  }
+
+  .projectContent:nth-child(4) .image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .projectContent:nth-child(4) .textContainer {
+    width: 100%;
+  }
+
+  .projectContent:nth-child(4) .button {
+    margin-top: 20px;
+  }
+
+  .projectContent:nth-child(4) .technologyTag {
+    font-size: 0.9rem;
+    padding: 6px 10px;
   }
 }

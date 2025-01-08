@@ -4,7 +4,7 @@ import styles from "./projectsList.module.css";
 import project1Image from "../../assets/images/projects/taskly/taskly.png";
 import project2Image from "../../assets/images/projects/movieVerse/movieverse.png";
 import project3Image from "../../assets/images/projects/healthLink/healthlink.png";
-import project4Image from "../../assets/images/projects/parkTub/parktub.png";
+import project4Image from "../../assets/images/projects/parkTub/home.jpg";
 
 const projects = [
   {
@@ -50,8 +50,8 @@ const Projects = () => {
     <section className={styles.projectsSection}>
       {projects.map((project) => (
         <div key={project.id} className={styles.projectContent}>
-          <div className={styles.imageContainer}>
-            <div className={styles.dualImageContainer}>
+          <div className={styles.topContainer}>
+            <div className={styles.imageContainer}>
               {project.images.map((img, index) => (
                 <img
                   key={index}
