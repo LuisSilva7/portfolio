@@ -50,6 +50,16 @@ const Projects = () => {
     <section className={styles.projectsSection}>
       {projects.map((project) => (
         <div key={project.id} className={styles.projectContent}>
+          <div className={styles.imageContainer0}>
+            {project.images.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`${project.title} - View ${index + 1}`}
+                className={styles.image}
+              />
+            ))}
+          </div>
           <div className={styles.topContainer}>
             <div className={styles.imageContainer}>
               {project.images.map((img, index) => (
