@@ -11,9 +11,9 @@ import movieVerse3 from "../assets/images/projects/movieVerse/cart.png";
 import healthLink1 from "../assets/images/projects/healthLink/healthlink.png";
 import healthLink2 from "../assets/images/projects/healthLink/about.png";
 import healthLink3 from "../assets/images/projects/healthLink/appointments.png";
-import parkTub1 from "../assets/images/projects/parkTub/parktub.jpg";
-import parkTub2 from "../assets/images/projects/parkTub/home2.jpg";
-import parkTub3 from "../assets/images/projects/parkTub/bonus.jpg";
+import parkTub1 from "../assets/images/projects/parkTub/parktub.png";
+import parkTub2 from "../assets/images/projects/parkTub/home2.png";
+import parkTub3 from "../assets/images/projects/parkTub/payments.png";
 import java from "../assets/images/skills/java.png";
 import springboot from "../assets/images/skills/springboot.png";
 import postgresql from "../assets/images/skills/postgresql.png";
@@ -28,9 +28,6 @@ import mapsapi from "../assets/images/skills/mapsapi.png";
 import stripe from "../assets/images/skills/stripe.png";
 import kafka from "../assets/images/skills/kafka.png";
 import niop from "../assets/images/skills/niop.png";
-import parkTub4 from "../assets/images/projects/parkTub/home5.png";
-import parkTub5 from "../assets/images/projects/parkTub/home6.png";
-import parkTub6 from "../assets/images/projects/parkTub/home7.png";
 
 const projectData = {
   1: {
@@ -95,7 +92,7 @@ const projectData = {
   4: {
     id: 4,
     title: "ParkTub",
-    images: [parkTub4, parkTub5, parkTub6],
+    images: [parkTub1, parkTub2, parkTub3],
     technologies: [
       { name: "Java", image: java },
       { name: "Springboot", image: springboot },

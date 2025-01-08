@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./skills.module.css";
-
 import bashImage from "../../assets/images/skills/bash.png";
 import sqlImage from "../../assets/images/skills/sql.png";
 import javascriptImage from "../../assets/images/skills/javascript.png";

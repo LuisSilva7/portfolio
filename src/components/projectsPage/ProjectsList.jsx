@@ -4,7 +4,7 @@ import styles from "./projectsList.module.css";
 import project1Image from "../../assets/images/projects/taskly/taskly.png";
 import project2Image from "../../assets/images/projects/movieVerse/movieverse.png";
 import project3Image from "../../assets/images/projects/healthLink/healthlink.png";
-import project4Image from "../../assets/images/projects/parkTub/home5.png";
+import project4Image from "../../assets/images/projects/parkTub/parktub.png";
 
 const projects = [
   {
