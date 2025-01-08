@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt } from "react-icons/fa";
 import styles from "./hero.module.css";
+import cv from "../../assets/docs/CV_updated.pdf";
 
 const Hero = () => {
   return (
@@ -27,7 +28,7 @@ const Hero = () => {
             <FaGithub />
           </a>
           <a
-            href="https://luissilva-portfolio.netlify.app/assets/docs/CV_updated.pdf"
+            href={cv}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.iconLink}

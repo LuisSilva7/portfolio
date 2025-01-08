@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./footer.module.css";
 import logoImage from "../../assets/images/LS-logo.png";
 import { FaLinkedin, FaGithub, FaEnvelope, FaFileAlt } from "react-icons/fa";
+import cv from "../../assets/docs/CV_updated.pdf";
 
 const Footer = () => {
   return (
@@ -28,7 +29,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="https://luissilva-portfolio.netlify.app/assets/docs/CV_updated.pdf"
+            href={cv}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.icon}
