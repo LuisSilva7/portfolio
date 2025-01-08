@@ -28,14 +28,14 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="/path-to-your-cv.pdf"
+            href="https://luissilva-portfolio.netlify.app/assets/docs/CV_updated.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.icon}
           >
             <FaFileAlt />
           </a>
-          <a href="mailto:youremail@example.com" className={styles.icon}>
+          <a href="mailto:lmpsilva7@gmail.com" className={styles.icon}>
             <FaEnvelope />
           </a>
         </div>

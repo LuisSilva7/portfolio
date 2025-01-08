@@ -27,14 +27,14 @@ const Hero = () => {
             <FaGithub />
           </a>
           <a
-            href="/path-to-your-cv.pdf"
+            href="https://luissilva-portfolio.netlify.app/assets/docs/CV_updated.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.iconLink}
           >
             <FaFileAlt />
           </a>
-          <a href="mailto:your.email@example.com" className={styles.iconLink}>
+          <a href="mailto:lmpsilva7@gmail.com" className={styles.iconLink}>
             <FaEnvelope />
           </a>
         </div>
