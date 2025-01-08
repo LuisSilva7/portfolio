@@ -9,13 +9,31 @@ const ProjectInfo = ({ project }) => {
 
   return (
     <section className={styles.projectInfoSection}>
-      <div className={styles.carouselContainer}>
-        <Carousel images={project.images} />
+      <div
+        className={`${styles.carouselContainer} ${
+          project.id === 4 ? styles.noBackground : ""
+        }`}
+      >
+        {project.id === 4 ? (
+          <div className={styles.imageGrid}>
+            {project.images.map((img, index) => (
+              <div key={index} className={styles.imageFrame}>
+                <img
+                  src={img}
+                  alt={`${project.title} - Image ${index + 1}`}
+                  className={styles.image}
+                />
+              </div>
+            ))}
+          </div>
+        ) : (
+          <Carousel images={project.images} />
+        )}
       </div>
       <div className={styles.detailsContainer}>
         <div className={styles.leftSection}>
           <hr className={styles.topLine} />
-          <h2>{project.title} - Background</h2>
+          <h2>{project.title}</h2>
           <ul className={styles.bulletPoints}>
             {project.points.map((point, index) => (
               <li key={index}>{point}</li>
