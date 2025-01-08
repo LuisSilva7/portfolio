@@ -113,14 +113,13 @@
   text-decoration: none;
   background: transparent;
   transition: all 0.3s ease;
-  border-radius: 8px;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: #253d5f;
+  background-color: #2c3e50;
   color: #ffffff;
-  border-color: #253d5f;
+  border-color: #2c3e50;
 }
 
 .topLine {

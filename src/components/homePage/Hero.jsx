@@ -11,20 +11,20 @@ const Hero = () => {
         <p>Information Systems Engineer</p>
         <div className={styles.iconContainer}>
           <a
-            href="https://github.com/YourGithubProfile"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.iconLink}
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://linkedin.com/in/YourLinkedInProfile"
+            href="https://www.linkedin.com/in/luis-silva7/"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.iconLink}
           >
             <FaLinkedin />
+          </a>
+          <a
+            href="https://github.com/LuisSilva7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.iconLink}
+          >
+            <FaGithub />
           </a>
           <a
             href="/path-to-your-cv.pdf"

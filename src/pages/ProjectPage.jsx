@@ -47,12 +47,10 @@ const projectData = {
       { name: "Docker", image: docker },
     ],
     points: [
-      "Built using Java, Spring Boot, and PostgreSQL for a secure and efficient backend, incorporating JWT for authentication and WebSockets for real-time communication.",
+      "Built using Java, Spring Boot, and PostgreSQL for an efficient backend, incorporating JWT for authentication and WebSockets for real-time communication.",
       "Developed a responsive frontend using Vue.js, HTML, and CSS to ensure a user-friendly experience.",
-      "Utilized Docker to containerize the frontend and backend, streamlining deployment and introducing CI/CD concepts.",
+      "Utilized Docker to containerize the frontend and backend, streamlining deployment and incorporating CI/CD concepts.",
     ],
-    description:
-      "Taskly was built using Java, Spring Boot, and PostgreSQL for a secure and efficient backend, where JWT was implemented for secure authentication and WebSockets for real-time chat functionality. I also used Vue.js, HTML, and CSS to create a responsive and user-friendly frontend. Docker was used to containerize the frontend and backend, facilitating deployment and introducing CI/CD concepts. This project provided hands-on experience in integrating these technologies to build scalable and modern web applications.",
     github: "https://github.com/LuisSilva7/taskly-project",
   },
   2: {
@@ -70,12 +68,10 @@ const projectData = {
       { name: "Docker", image: docker },
     ],
     points: [
-      "Built using Java, Spring Boot, and MySQL for backend processes, integrating Stripe for secure payment processing and JWT for robust user authentication.",
-      "Developed the frontend with React, HTML, and CSS, utilizing React's component-based architecture for modular and efficient development.",
-      "Used Docker to containerize the application, streamlining deployment and enabling scalability, providing hands-on experience in building secure and scalable full-stack applications.",
+      "Built using Java, Spring Boot, and MySQL for backend processes, integrating Stripe for payment processing and JWT for user authentication.",
+      "Developed the frontend with React, HTML, and CSS, utilizing React's component-based architecture for efficient development.",
+      "Used Docker to containerize the application, streamlining deployment, providing hands-on experience in building full-stack applications.",
     ],
-    description:
-      "MovieVerse's backend was built using Java, Spring Boot, and MySQL, with Stripe integrated for secure payment processing and JWT implemented for robust user authentication. The frontend was developed using React, HTML, and CSS, leveraging React's component-based architecture for efficient and modular development. Docker was utilized to containerize the application components, streamlining deployment and enabling scalability. This project provided valuable experience in combining these technologies to build a secure, scalable, and functional full-stack application.",
     github: "https://github.com/LuisSilva7/movieVerse-project",
   },
   3: {
@@ -90,12 +86,10 @@ const projectData = {
       { name: "Netlify", image: netlify },
     ],
     points: [
-      "Developed using React, HTML, and CSS, with LocalStorage implemented for session data management and secure user information storage.",
+      "Developed using React, HTML, and CSS, with LocalStorage implemented for session data management.",
       "Focused on learning React's core concepts by creating a responsive interface for scheduling and managing medical appointments.",
-      "Deployed the platform using Netlify, providing a straightforward and efficient hosting solution.",
+      "Deployed the platform using Netlify, providing a straightforward hosting solution.",
     ],
-    description:
-      "HealthLink's was built using React, HTML, and CSS, with LocalStorage implemented for managing session data and securely storing user information. The project was developed as an introduction to React and its core concepts, focusing on creating a responsive interface for scheduling and managing medical appointments. The platform was deployed using Netlify, offering a simple and efficient hosting solution. This project provided foundational experience in building and deploying React-based applications.",
     github: "https://github.com/LuisSilva7/healthLink-project",
   },
   4: {
@@ -116,12 +110,10 @@ const projectData = {
       { name: "Docker", image: docker },
     ],
     points: [
-      "Developed using a microservices architecture with a backend built in Java, Spring Boot, and MySQL, incorporating Stripe for payment processing and Kafka and SSE for real-time updates.",
-      "Leveraged the NIoP solution from Neadvance for automatic license plate recognition, enabling real-time parking availability, and integrated the Google Maps API for location visualization and navigation.",
-      "Created a responsive frontend using React, HTML, and CSS, gaining experience in integrating real-time and location-based technologies.",
+      "Developed using a microservices architecture with a backend built in Java, Spring Boot, and MySQL, incorporating Stripe for payment processing.",
+      "Utilized the NIoP solution from Neadvance for automatic license plate recognition, with Kafka and SSE for real-time parking availability.",
+      "Created a responsive frontend using React, HTML, and CSS, and integrated the Google Maps API for location visualization.",
     ],
-    description:
-      "ParkTub is a mobile application developed using a microservices architecture. Its backend was built with Java, Spring Boot, and MySQL, with Stripe integrated for secure payment processing and Kafka and SSE enabling real-time updates. The project also utilized the NIoP solution from Neadvance for automatic license plate recognition through a camera system, providing real-time parking availability. The frontend was developed with React, HTML, and CSS, ensuring responsiveness, and the Google Maps API was integrated for location visualization and navigation. This project offered valuable experience in microservices architecture and the integration of real-time and location-based technologies.",
     github: "https://github.com/LuisSilva7/parkTub-project",
   },
 };

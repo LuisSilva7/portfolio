@@ -20,7 +20,7 @@ const projects = [
     id: 2,
     title: "MovieVerse",
     description:
-      "MovieVerse is an e-commerce platform designed for online movie shopping. It provides a simple interface with filtering options to browse a large collection of films and includes a secure payment system for reliable purchases.",
+      "MovieVerse is an e-commerce platform designed for online movie shopping. It provides a simple interface with filtering options to browse a large collection of films and includes a secure payment system for purchases.",
     images: [project2Image],
     link: "/projects/2",
     technologies: ["Java", "Spring Boot", "MySQL", "React"],
@@ -29,7 +29,7 @@ const projects = [
     id: 3,
     title: "HealthLink",
     description:
-      "HealthLink makes scheduling appointments simple and efficient. With an intuitive booking system, users can select their preferred date and time, while healthcare providers can effectively manage and optimize their schedules.",
+      "HealthLink makes scheduling appointments simple and efficient. With an intuitive booking system, users can select their preferred date and time, while healthcare providers can effectively manage their schedules.",
     images: [project3Image],
     link: "/projects/3",
     technologies: ["React"],
@@ -38,7 +38,7 @@ const projects = [
     id: 4,
     title: "ParkTub",
     description:
-      "ParkTub is a mobile platform designed to simplify parking for users of Transportes Urbanos de Braga (TUB). It provides real-time parking availability updates, integrated payments, and rewards, offering an efficient parking experience.",
+      "ParkTub is a mobile platform designed to simplify parking for users of Transportes Urbanos de Braga (TUB). It provides real-time parking availability updates and integrated payments offering an efficient parking experience.",
     images: [project4Image],
     link: "/projects/4",
     technologies: ["Java", "Spring Boot", "MySQL", "React"],
