@@ -36,7 +36,7 @@ const Footer = () => {
           >
             <FaFileAlt />
           </a>
-          <a href="mailto:lmpsilva7@gmail.com" className={styles.icon}>
+          <a href="mailto:luismpsilva07@gmail.com" className={styles.icon}>
             <FaEnvelope />
           </a>
         </div>

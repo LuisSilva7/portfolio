@@ -35,7 +35,7 @@ const Hero = () => {
           >
             <FaFileAlt />
           </a>
-          <a href="mailto:lmpsilva7@gmail.com" className={styles.iconLink}>
+          <a href="mailto:luismpsilva07@gmail.com" className={styles.iconLink}>
             <FaEnvelope />
           </a>
         </div>
