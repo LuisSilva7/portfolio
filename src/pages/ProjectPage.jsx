@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import ProjectInfo from "../components/projectPage/ProjectInfo";
 import taskly1 from "../assets/images/projects/taskly/taskly.png";
-import taskly2 from "../assets/images/projects/taskly/dashboard.png";
+import taskly2 from "../assets/images/projects/taskly/login.png";
 import taskly3 from "../assets/images/projects/taskly/projects.png";
 import movieVerse1 from "../assets/images/projects/movieVerse/movieverse.png";
 import movieVerse2 from "../assets/images/projects/movieVerse/movies.png";
