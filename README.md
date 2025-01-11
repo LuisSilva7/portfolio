@@ -4,15 +4,19 @@ This portfolio is a showcase of my professional skills, projects, and achievemen
 
 ## Technologies Used
 
-  - **React** - JavaScript library for building user interfaces.
-  - **HTML** - Structure of the web application.
-  - **CSS** - For styling the website.
-  - **JavaScript** - Used for client-side logic and interactivity.
+- **React** - JavaScript library for building user interfaces.
+- **HTML** - Structure of the web application.
+- **CSS** - For styling the website.
+- **JavaScript** - Used for client-side logic and interactivity.
 
 ## Link to Deployment
 
 The Portfolio website is deployed on Netlify and can be accessed at the following link:
 [Portfolio Live](https://www.luisilva.tech)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
 ### Maintainer
 
