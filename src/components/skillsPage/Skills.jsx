@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./skills.module.css";
-import bashImage from "../../assets/images/skills/bash.png";
+import goImage from "../../assets/images/skills/go.png";
 import sqlImage from "../../assets/images/skills/sql.png";
 import javascriptImage from "../../assets/images/skills/javascript.png";
 import pythonImage from "../../assets/images/skills/python.png";
@@ -29,12 +29,12 @@ const skillCategories = [
         name: "JavaScript",
         description: "Web Development",
       },
+      { image: goImage, name: "Go", description: "Fast Language" },
       { image: pythonImage, name: "Python", description: "AI & Scripting" },
       { image: cImage, name: "C", description: "Low-Level Coding" },
       { image: htmlImage, name: "HTML", description: "Web Structure" },
       { image: cssImage, name: "CSS", description: "Web Styling" },
       { image: sqlImage, name: "SQL", description: "Database Queries" },
-      { image: bashImage, name: "Bash", description: "Shell Scripting" },
     ],
   },
   {
